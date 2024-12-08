@@ -1,0 +1,94 @@
+/* Styling for the Membership Page */
+#qualifications, #evidence, #references, #tiers {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  #qualifications ul,
+  #evidence ul,
+  #references ul,
+  #tiers ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  #qualifications li,
+  #evidence li,
+  #references li,
+  #tiers li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  #qualifications h2,
+  #evidence h2,
+  #references h2,
+  #tiers h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  
+  #references p {
+    font-size: 1.1rem;
+  }
+  
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .section h2 {
+      font-size: 1.6rem;
+    }
+  
+    .section ul li {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    footer p {
+      font-size: 0.9rem;
+    }
+  }
+
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+/* Logo adjustments */
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+
+/* Custom styling for the nav items */
+.nav-link {
+    font-size: 18px;
+    margin-right: 20px;
+    color: #150569 !important;
+}
+
+.nav-link span {
+    color: #FF0000;
+}
+
+.bi-shop {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #150569;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/zb1QCRC/Screenshot-24.png" type="image/x-icon">
+    <title>Profile Overview - FDTC</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-header {
+            background-color: #0056b3;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 30px 30px 0 0; /* Rounded top corners */
+        }
+
+        .profile-content {
+            padding: 40px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-content {
+            border-radius: 30px; /* Rounded corners for the modal */
+        }
+
+        .modal-body input {
+            margin-bottom: 15px;
+            border-radius: 30px; /* Rounded inputs */
+        }
+
+        .btn-primary {
+            border-radius: 30px; /* Rounded button */
+        }
+
+        /* Custom styles for mobile responsiveness */
+        @media (max-width: 576px) {
+            .profile-header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="profile-header">
+        <h1>Profile Overview</h1>
+
+    
+    </div>
+
+
+      <!-- Sidebar -->
+      <div class="col-md-3 dashboard-sidebar">
+        <div class="container">
+            <h4>Member Menu</h4>
+            <a href="profile.html">Profile Overview</a>
+            <a href="activity.html">Recent Activity</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="settings.html">Settings</a>
+            <a href="#" id="logoutLink">Logout</a>
+        </div>
+    </div>
+
+    <!-- Profile Content -->
+    <div class="container profile-content">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h4>Welcome, Naga</h4>
+                <p><strong>Email:</strong> chiefnaga@example.com</p>
+                <p><strong>Membership Type:</strong> Premium Member</p>
+                <p><strong>Location:</strong> New York, USA</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#updateProfileModal">Update Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Update Profile Modal -->
+    <div class="modal fade" id="updateProfileModal" tabindex="-1" role="dialog" aria-labelledby="updateProfileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="updateProfileModalLabel">Update Profile</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="updateProfileForm">
+                        <div class="form-group">
+                            <label for="profileNameInput">Full Name</label>
+                            <input type="text" class="form-control" id="profileNameInput" value="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profileEmailInput">Email</label>
+                            <input type="email" class="form-control" id="profileEmailInput" value="john.doe@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profileLocationInput">Location</label>
+                            <input type="text" class="form-control" id="profileLocationInput" value="New York, USA" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Handle profile form submission
+        document.getElementById('updateProfileForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get input values
+            const name = document.getElementById('profileNameInput').value;
+            const email = document.getElementById('profileEmailInput').value;
+            const location = document.getElementById('profileLocationInput').value;
+
+            // Simulate updating profile info (display confirmation)
+            alert('Profile updated successfully!');
+            $('#updateProfileModal').modal('hide');
+        });
+    </script>
+
+</body>
+
+</html>

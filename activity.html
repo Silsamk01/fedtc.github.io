@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/zb1QCRC/Screenshot-24.png" type="image/x-icon">
+    <title>Recent Activity - FDTC</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .activity-header {
+            background-color: #0056b3;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 30px 30px 0 0; /* Rounded top corners */
+        }
+
+        .activity-content {
+            padding: 40px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .activity-content ul li {
+            margin: 15px 0;
+            font-size: 1.1rem;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .activity-content ul li:hover {
+            background-color: #e1f3ff;
+            transform: translateX(10px); /* Slight animation on hover */
+        }
+
+        /* Custom styles for mobile responsiveness */
+        @media (max-width: 576px) {
+            .activity-header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="activity-header">
+        <h1>Recent Activity</h1>
+    </div>
+
+    <!-- Activity Content -->
+    <div class="container activity-content">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h4>John Doe's Activity Log</h4>
+                <ul>
+                    <li>Completed a course on Ethical Data Practices (November 2024)</li>
+                    <li>Joined the "Data Science Innovations" group (October 2024)</li>
+                    <li>Submitted research paper on AI Ethics (September 2024)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

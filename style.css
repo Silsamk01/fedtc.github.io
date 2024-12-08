@@ -1,0 +1,540 @@
+* {
+    font-family: Arial, sans-serif
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+/* Logo adjustments */
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+
+/* Custom styling for the nav items */
+.nav-link {
+    font-size: 18px;
+    margin-right: 20px;
+    color: #150569 !important;
+}
+
+.nav-link span {
+    color: #FF0000;
+}
+
+.bi-shop {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #150569;
+}
+
+ /* General styles */
+ #counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.counter-item {
+    font-size: 1.2rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+#counter-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    #counter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter-item {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    #counter-number {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #counter {
+        padding: 10px;
+    }
+
+    .counter-item {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    #counter-number {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* 
+.bottom {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+} */
+/* Main Footer Styling */
+.bottom {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000;
+}
+
+.bottom div {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.bottom img {
+    width: 150px;
+}
+
+.bottom ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bottom ul li {
+    margin-bottom: 10px;
+}
+
+.bottom ul li a {
+    color: #150569;
+    text-decoration: none;
+}
+
+.bottom ul li a:hover {
+    color: #FF0000;
+}
+
+.bottom h4,
+.bottom h6 {
+    color: #150569;
+}
+
+/* Copyright section */
+.footer-bottom {
+    background-color: #FF0000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.subcription {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.values {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    /* gap: 1rem; */
+
+}
+
+
+.card {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: bounceIn 1s forwards;
+}
+
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.contact-us {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: transparent;
+    color:lightblue;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.contact-us .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-us .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.contact-us .form-group input,
+.contact-us .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.contact-us .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-us button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF0000;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-us button:hover {
+    background-color: #150569;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #FF0000;
+    border: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+    /* Hidden by default */
+    transition: background-color 0.3s ease;
+}
+
+.scroll-up-btn:hover {
+    background-color: #d00000;
+}
+
+
+.contact-btn {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #d00000;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 20px;
+    right: 50px;
+    max-width: 400px;
+    /* z-index: 9999; */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #150569;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0f044c;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background-color: transparent;
+    padding: 20px;
+}
+
+.about-us-content {
+    max-width: 800px;
+    background-color: transparent;
+    padding: 20px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.about-us-content h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-us-content p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-us-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-us-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-us-content p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+/* Responsive map height for smaller screens */
+@media (max-width: 768px) {
+    #map {
+        height: 300px;
+        /* Adjust height for tablets and small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #map {
+        height: 250px;
+        /* Adjust height for mobile screens */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bottom div {
+        max-width: none;
+        width: 90%;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Adjustments for tablet devices */
+@media (max-width: 768px) {
+    .card-img-overlay {
+        margin-left: 20px;
+        padding-top: 20px;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+        /* Smaller font size for title */
+    }
+
+    .card-text {
+        font-size: 2rem;
+        /* Reduce text size */
+    }
+
+    .contact-btn {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .contact-btn i {
+        font-size: 1.2rem;
+    }
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 480px) {
+    .card-img-overlay {
+        margin-left: 10px;
+        padding-top: 10px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 1.5rem;
+    }
+
+    .contact-btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .contact-btn i {
+        font-size: 1rem;
+    }
+}
+
+.logo {
+    width: 100px;
+    margin-left: 30px;
+}
+
+.log {
+    width: 150px;
+    height: 100px;
+
+}
+
+
+
+.more-info {
+    display: none;
+    font-size: 16px;
+    margin-top: 20px;
+    /* background-color: #e9ecef; */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.more-info-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.more-info-btn:hover {
+    background-color: #0056b3;
+}

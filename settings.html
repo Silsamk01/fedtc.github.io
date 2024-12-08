@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/zb1QCRC/Screenshot-24.png" type="image/x-icon">
+    <title>Settings - FDTC</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .settings-header {
+            background-color: #0056b3;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 30px 30px 0 0;
+            /* Rounded top corners */
+        }
+
+        .settings-content {
+            padding: 40px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .settings-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .settings-content ul li {
+            margin: 10px 0;
+        }
+
+        .settings-content ul li a {
+            text-decoration: none;
+            color: #0056b3;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            padding: 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .settings-content ul li a:hover {
+            background-color: #f1f1f1;
+            border-radius: 30px;
+        }
+
+        /* Custom styles for mobile responsiveness */
+        @media (max-width: 576px) {
+            .settings-header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <div class="settings-header">
+            <h1>Account Settings</h1>
+        </div>
+
+        <!-- Settings Content -->
+        <div class="container settings-content">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-3 dashboard-sidebar">
+                    <div class="container">
+                        <h4>Member Menu</h4>
+                        <a href="profile.html">Profile Overview</a>
+                        <br>
+                        <a href="activity.html">Recent Activity</a>
+                        <br>
+                        <a href="notifications.html">Notifications</a>
+                        <br>
+                        <a href="settings.html">Settings</a>
+                        <br>
+                        <a href="#" id="logoutLink">Logout</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <h4>Manage Your Account</h4>
+                    <ul>
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="#">Update Profile Information</a></li>
+                        <li><a href="#">Manage Notifications</a></li>
+                        <li><a href="#">Privacy Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
