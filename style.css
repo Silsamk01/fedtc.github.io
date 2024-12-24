@@ -2,16 +2,6 @@
     font-family: Arial, sans-serif
 }
 
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    background-color: transparent;
-    padding: 10px 20px;
-}
-
 /* Logo adjustments */
 .logo {
     width: 150px;
@@ -36,8 +26,8 @@
     color: #150569;
 }
 
- /* General styles */
- #counter {
+/* General styles */
+#counter {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,17 +84,6 @@
     }
 }
 
-
-/* 
-.bottom {
-    width: 100vw;
-    height: 400px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-} */
 /* Main Footer Styling */
 .bottom {
     width: 100vw;
@@ -112,9 +91,9 @@
     justify-content: space-around;
     align-items: flex-start;
     padding: 20px;
-    color: #fff;
+    color: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #000;
+
 }
 
 .bottom div {
@@ -152,8 +131,9 @@
 
 /* Copyright section */
 .footer-bottom {
-    background-color: #FF0000;
-    color: white;
+    background-color: #333333;
+    color: #d3d3d3;
+    height: 50px;
     text-align: center;
     padding: 10px;
 }
@@ -205,7 +185,7 @@
     max-width: 600px;
     margin: 50px auto;
     background: transparent;
-    color:lightblue;
+    color: black;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -537,4 +517,8 @@
 
 .more-info-btn:hover {
     background-color: #0056b3;
+}
+
+button {
+    border-radius: 20px;
 }
