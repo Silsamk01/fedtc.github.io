@@ -1,12 +1,3 @@
-// Function to toggle visibility of the "Learn More" section in the About Us section
-function toggleMoreInfo() {
-    const moreInfo = document.getElementById("more-info");
-    if (moreInfo.style.display === "block") {
-        moreInfo.style.display = "none";
-    } else {
-        moreInfo.style.display = "block";
-    }
-}
 
 
 // Counter function to animate numbers
