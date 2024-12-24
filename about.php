@@ -7,91 +7,63 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://i.ibb.co/zb1QCRC/Screenshot-24.png" type="image/x-icon">
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="https://i.ibb.co/YWzxL1h/IMG-0683.jpg" type="image/x-icon">
     <title>About Us - Federation of Data and Technology Council</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .fdtc-section {
-            background-color: #f8f9fa;
-            padding: 50px 0;
-        }
 
-        .fdtc-title {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .fdtc-text {
-            font-size: 1.1rem;
-        }
-
-        .section-title {
-            color: #0056b3;
-            font-weight: bold;
-        }
-
-        .objective-item {
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-white">
+		<div class="container-fluid">
+			<img class="logo" src="https://i.ibb.co/YWzxL1h/IMG-0683.jpg" alt="" border="0">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: black;">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.php"style="color: #150569;">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="btn btn-secondary dropdown-toggle" href="about.php" role="button" style="color: #150569;">
+							About <span style="color: #FFC857;">Us</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" style="color: #150569;">Our <span
+								style="color: #FFC857;">Publications</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="membership.php" style="color: #150569;">Become<span
+								style="color: #FFC857;"> a Member</span></a>
 
-    <div style="display: flex;justify-content: space-between;align-items: center; color: white;background-color: black;padding: 10px 20px;">
-        <img class="logo" src="https://i.ibb.co/zb1QCRC/Screenshot-24.png" alt="" border="0">
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" style="color: #150569;">Ho<span
-                        style="color: #FF0000;">mes</span></a>
-            </li>
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false" style="color: #150569;">
-                    About <span style="color: #FF0000;">Us</span>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Who we are</a></li>
-                </ul>.
-            </div>
-            <li class="nav-item">
-                <a class="nav-link" href="services.php" style="color: #150569;">Our <span
-                        style="color: #FF0000;">Services</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="color: #150569;">Become<span style="color: #FF0000;"> a
-                        Member</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><span>Shop</span><i
-                        style="font-size: 20px;margin-right: 80px;margin-bottom: 40px;" class="bi bi-shop"></i></a>
-            </li>
-
-        </ul>
-
-
-
-
-    </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	   
 
     <div class="container-fluid fdtc-section">
         <div class="container">
             <div class="fdtc-title">
-                <h1>Federation of Data and Technology Council (FDTC)</h1>
+                <h1>Federation of Data and Technology Council (FEDTC)</h1>
             </div>
             <div class="col-md-12">
-                <h3 class="section-title">FDTC as a Voice and Medium for Development</h3>
+                <h3 class="section-title">FEDTC as a Voice and Medium for Development</h3>
                 <p class="fdtc-text">
-                    At FDTC, we serve as a powerful voice and an influential medium for fostering the continuous
+                    At FEDTC, we serve as a powerful voice and an influential medium for fostering the continuous
                     development of the data and technology industry.
                     By providing a platform for thought leadership and innovation, we connect professionals,
                     researchers, and organizations to encourage groundbreaking progress.
                     We are dedicated to recognizing and celebrating great talent in data and technology, honoring those
                     whose contributions inspire and shape the future of our field.
-                    Through this, FDTC plays a pivotal role in advancing not only the career trajectories of individuals
+                    Through this, FEDTC plays a pivotal role in advancing not only the career trajectories of
+                    individuals
                     but also the global technological landscape.
                 </p>
             </div>
@@ -101,7 +73,8 @@
                     <p class="fdtc-text">
                         To unite and inspire Data and IT professionals and researchers worldwide by fostering
                         excellence, integrity, and innovation.
-                        Rooted in godly values that promote honesty, transparency, and ethical leadership, FDTC seeks to
+                        Rooted in godly values that promote honesty, transparency, and ethical leadership, FEDTC seeks
+                        to
                         honor exceptional contributions,
                         develop future experts, and advance the global impact of data and technology for the benefit of
                         all.
@@ -150,7 +123,7 @@
 
 
 
-    <div style="background-color: #FF0000;color: white;height: 50px;">
+    <div class="foot">
         © Copyright Federation Of Data and Technology Council . All Rights Reserved.
     </div>
 
@@ -160,6 +133,10 @@
 
 
     <!-- Bootstrap JS & jQuery -->
+     
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
