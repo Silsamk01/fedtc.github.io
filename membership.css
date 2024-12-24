@@ -37,8 +37,8 @@
   }
   
   footer {
-    background-color: #003366;
-    color: white;
+    background-color: #333333;
+    color:#d3d3d3;
     text-align: center;
     padding: 10px;
   }
@@ -66,7 +66,8 @@
     align-items: center;
     color: white;
     background-color: transparent;
-    padding: 10px 20px;
+    padding: 10px 20px ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Logo adjustments */
@@ -91,4 +92,9 @@
     font-size: 24px;
     margin-right: 20px;
     color: #150569;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
